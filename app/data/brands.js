@@ -1,0 +1,18 @@
+export const brands = [
+  { name: "Apple" },
+  { name: "Samsung" },
+  { name: "Google" },
+  { name: "Microsoft" },
+  { name: "Huawei" },
+  { name: "Xiaomi" },
+  { name: "OnePlus" },
+  { name: "Oppo" },
+  { name: "Realme" },
+  { name: "Sony" },
+  { name: "LG" },
+  { name: "Motorola" },
+  { name: "Nokia" },
+  { name: "Asus" },
+  { name: "Vivo" },
+  { name: "Lenovo" },
+];

@@ -1,0 +1,31 @@
+/* Custom Navigation Button Styles */
+.swiper-button-prev,
+.swiper-button-next {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  /* background-color: #1e40af; */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.custom-prev,
+.custom-next {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 10;
+}
+
+.custom-prev {
+  right: 10px; 
+}
+
+.custom-next {
+  right: 60px; 
+}
