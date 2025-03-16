@@ -48,12 +48,12 @@ export default function Navbar() {
           <div className="mt-5 flex flex-col md:flex-row gap-2.5 justify-between">
             {menus.map((ni, index) => (
               <Link
-                href={""}
+                href={ni.link}
                 key={index}
                 className="flex md:flex-col items-center gap-1.5 hover:text-blue-600 ease-linear duration-100"
               >
-                <span className="text-xl">{ni.icon}</span>
-                <span>{ni.name}</span>
+                <span className="text-xl text-blue-600">{ni.icon}</span>
+                <span className="">{ni.name}</span>
               </Link>
             ))}
           </div>

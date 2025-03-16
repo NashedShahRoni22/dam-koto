@@ -2,8 +2,10 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/shared/Navbar";
 import BottomBar from "./components/shared/BottomBar";
-import Brands from "./components/home/Brands";
-import Blogs from "./components/home/Blogs";
+import Brands from "./components/shared/Brands";
+import Blogs from "./components/shared/Blogs";
+import TopHits from "./components/shared/TopHits";
+import TopFans from "./components/shared/TopFans";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,7 +26,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <div className="mx-4 md:mx-8 lg:mx-12">
+        <div className="mx-5 md:container md:mx-auto">
           <header>
             <Navbar />
           </header>
@@ -32,6 +34,8 @@ export default function RootLayout({ children }) {
           <main className="lg:flex gap-8">
             <div className="lg:w-1/6">
               <Brands />
+              <TopHits />
+              <TopFans/>
             </div>
             <div className="lg:w-3/6">{children}</div>
             <div className="lg:w-2/6">

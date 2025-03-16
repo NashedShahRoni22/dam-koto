@@ -1,5 +1,5 @@
 import { brands } from "@/app/data/brands";
-import BrancdCard from "../shared/BrandCard";
+import BrancdCard from "./BrandCard";
 
 export default function Brands() {
   return (
